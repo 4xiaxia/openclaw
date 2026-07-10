@@ -1,0 +1,319 @@
+# Instincts generated from https://github.com/4xiaxia/openclaw
+# Generated: 2026-07-10T23:17:47.502Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: openclaw-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: build(deps): bump the npm_and_yarn group across 4 directories with 13 updates
+
+---
+id: openclaw-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: openclaw-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: openclaw-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: openclaw-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: openclaw-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/openclaw
+---
+
+# Openclaw Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: openclaw-instinct-file-naming-camelcase
+trigger: "When creating a new TypeScript file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct File Naming Camelcase
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: openclaw-instinct-function-naming-camelcase
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Function Naming Camelcase
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: openclaw-instinct-class-naming-pascalcase
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Class Naming Pascalcase
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: openclaw-instinct-constant-naming-screaming-snake-case
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Constant Naming Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: openclaw-instinct-import-style-relative
+trigger: "When importing modules within the project"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: openclaw-instinct-export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: openclaw-instinct-commit-prefix-build
+trigger: "When making dependency or build-related changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Commit Prefix Build
+
+## Action
+
+Prefix the commit message with 'build' following conventional commit format
+
+## Evidence
+
+- Pattern in commits.prefixes: build
+- Example: build(deps): bump the npm_and_yarn group across 4 directories with 13 updates
+
+---
+id: openclaw-instinct-commit-format-conventional
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Commit Format Conventional
+
+## Action
+
+Use the conventional commit format: <type>(<scope>): <description>
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Example: build(deps): bump the npm_and_yarn group across 4 directories with 13 updates
+
+---
+id: openclaw-instinct-test-location-separate
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: openclaw-instinct-architecture-hybrid-modules
+trigger: "When organizing modules"
+confidence: 0.7
+domain: architecture
+source: repo-analysis
+source_repo: 4xiaxia/openclaw
+---
+
+# Openclaw Instinct Architecture Hybrid Modules
+
+## Action
+
+Use a hybrid organization approach (mix of monolithic and modular)
+
+## Evidence
+
+- Pattern in architecture.moduleOrganization: hybrid
+
